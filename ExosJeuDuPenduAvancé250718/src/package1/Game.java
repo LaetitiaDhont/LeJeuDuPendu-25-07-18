@@ -76,4 +76,16 @@ public class Game {
 		}
 		return vu;
 	}
+	
+// 4. Fin de partie
+	
+	boolean partieFinie (boolean vu []) {
+		int i;
+		for (i =0; i<vu.length; i++){
+			if (vu[i] == false) {
+			return false;
+		}
+	}
+		return true;
+	}
 }
