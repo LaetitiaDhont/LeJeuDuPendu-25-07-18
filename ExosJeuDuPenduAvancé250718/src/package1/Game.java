@@ -58,6 +58,22 @@ public class Game {
 			else {
 				System.out.println("?");
 			}
+		}	
+	}
+	
+// 3 . MAJ du tableau de booléans 
+	boolean [] metAjour (char [] mot, boolean [] vu, char ch) {
+		int i;
+		for (i = 0; i<mot.length; i++) {
+			if (ch == mot[i]) {
+				vu[i] = true;
+			}
+			
+			else {
+				vu[i] = false;
+			}
+			
 		}
+		return vu;
 	}
 }
